@@ -1,0 +1,14 @@
+.regBut {
+  margin:100px;
+}
+button{
+  display: inline-block;
+}
+section {
+  display: table;
+  margin: 8px;
+}
+
+
+
+
