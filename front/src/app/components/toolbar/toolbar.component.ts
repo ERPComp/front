@@ -11,7 +11,7 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   dashboardsCondition = true;
@@ -42,5 +42,6 @@ export class ToolbarComponent implements OnInit {
 
   }
   onProfileClick(){
+    this.router.navigate (['profile/1']);
   }
 }

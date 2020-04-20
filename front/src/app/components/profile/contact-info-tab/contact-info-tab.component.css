@@ -1,0 +1,27 @@
+tr{
+  display: table-row;
+  vertical-align: inherit;
+}
+td{
+  height: 16px;
+  display: table-cell;
+  vertical-align: inherit;
+}
+.InfoLine_Name{
+  width: 400px !important;
+  text-align: right !important;
+  min-width: 300px !important;
+  display: table-cell;
+}
+.InfoLine_Value{
+  width: 400px !important;
+  display: table-cell;
+  padding-left: 30px !important;
+}
+img{
+  height: 64px;
+  width: 64px;
+}
+.InfoLine_Name_Empty, .InfoLine_Value_Empty{
+  width: 50px !important;
+}

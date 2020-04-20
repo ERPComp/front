@@ -10,6 +10,12 @@ import { LoginComponent } from './components/login/login.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ChangeProfileComponent } from './components/change-profile/change-profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ExperienceTabComponent } from './components/profile/experience-tab/experience-tab.component';
+import { GeneralDataTabComponent } from './components/profile/general-data-tab/general-data-tab.component';
+import { LocationTabComponent } from './components/profile/location-tab/location-tab.component';
+import { ContactInfoTabComponent } from './components/profile/contact-info-tab/contact-info-tab.component';
+import { ProjectInfoTabComponent } from './components/profile/project-info-tab/project-info-tab.component';
+
 
 
 @NgModule({
@@ -20,7 +26,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     LoginComponent,
     WelcomeComponent,
-    ChangeProfileComponent
+    ChangeProfileComponent,
+    ExperienceTabComponent,
+    GeneralDataTabComponent,
+    LocationTabComponent,
+    ContactInfoTabComponent,
+    ProjectInfoTabComponent
   ],
   imports: [
     BrowserModule,
