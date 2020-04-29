@@ -9,8 +9,8 @@
     <div class="inputs">
       <mat-form-field class="field top">
         <mat-label>Summary</mat-label>
-        <input matInput [formControl]="emailFormControl" placeholder="">
-        <mat-error *ngIf="emailFormControl.hasError('required')">
+        <input matInput [formControl]="summaryFormControl" placeholder="">
+        <mat-error *ngIf="summaryFormControl.hasError('required')">
           Summary is <strong>required</strong>
         </mat-error>
       </mat-form-field>
@@ -32,7 +32,7 @@
     </div>
   </div>
   <mat-divider></mat-divider>
-  <div class="aaa" mat-dialog-actions>
+  <div class="footer" mat-dialog-actions>
     <button mat-raised-button (click)="onSubmitClick()" >Submit</button>
     <button mat-button (click)="onCancelClick()" >Close</button>
   </div>

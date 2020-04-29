@@ -18,6 +18,7 @@ import { HelpImproveComponent } from './components/help-improve/help-improve.com
 import { CreateTicketComponent } from './components/create-ticket/create-ticket.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import {FormsModule} from '@angular/forms';
+import { ModalWindowComponent } from './components/modal-window/modal-window.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {FormsModule} from '@angular/forms';
     ProjectInfoTabComponent,
     HelpImproveComponent,
     CreateTicketComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ModalWindowComponent
   ],
   imports: [
     BrowserModule,

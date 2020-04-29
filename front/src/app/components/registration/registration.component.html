@@ -16,7 +16,7 @@
         <mat-error *ngIf="isControlInvalid('passwordName')">Password is <strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">
-        <input  formControlName="confirmPasswordName" placeholder="Confirm Password">
+        <input matInput formControlName="confirmPasswordName" placeholder="Confirm Password">
         <mat-error *ngIf="isControlInvalid('confirmPasswordName')">Confirm Password is<strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">

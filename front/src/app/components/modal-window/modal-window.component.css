@@ -1,0 +1,18 @@
+.modal{
+  min-width: 250px;
+  min-height: 120px;
+}
+.prompt{
+  width: 100%;
+}
+.icon{
+  color: deepskyblue;
+  margin-left: 80px;
+  cursor: pointer;
+  font-size: 200px;
+}
+.text{
+  font-size: 19px;
+  text-align: center;
+}
+
