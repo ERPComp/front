@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
+import {HelpImproveComponent} from '../help-improve/help-improve.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -11,7 +11,8 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private matDialog: MatDialog) {
   }
 
   dashboardsCondition = true;
@@ -19,6 +20,10 @@ export class ToolbarComponent implements OnInit {
   ticketsCondition = true;
 
   ngOnInit(): void {
+  }
+
+  onHomeClick(){
+    this.router.navigate (['home']);
   }
 
   onDashboardsClick(){
@@ -38,8 +43,8 @@ export class ToolbarComponent implements OnInit {
   onSearchClick(){
 
   }
-  onFeedbackClick(){
-
+  onHelpImproveClick(){
+      this.matDialog.open(HelpImproveComponent);
   }
   onProfileClick(){
     this.router.navigate (['profile/1']);

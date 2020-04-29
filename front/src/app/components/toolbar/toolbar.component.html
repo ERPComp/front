@@ -1,12 +1,8 @@
 <mat-toolbar color="primary">
   <div class="left">
-    <button class="button_left" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Main menu">
-      <mat-icon>more_vert</mat-icon>
+    <button class="button_left" mat-icon-button (click)="onHomeClick()" aria-label="home">
+      <mat-icon>home</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>dialpad</mat-icon> <span>Redial</span> </button>
-      <button mat-menu-item> <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span> </button>
-    </mat-menu>
 
     <button class="button_left" (click)="onDashboardsClick()" mat-button [matMenuTriggerFor]="menu"> Dashboards
       <mat-icon *ngIf="dashboardsCondition">keyboard_arrow_down</mat-icon>
@@ -42,7 +38,7 @@
     <button class="button_right button_style" (click)="onSearchClick()" mat-button>
       Search <mat-icon>search</mat-icon>
     </button>
-    <button mat-mini-fab class="button_right buttonIcon" (click)="onFeedbackClick()" color="primary">
+    <button mat-mini-fab class="button_right buttonIcon" (click)="onHelpImproveClick()" color="primary">
       <mat-icon>feedback</mat-icon>
     </button>
     <button mat-mini-fab class="button_right buttonIcon" (click)="onProfileClick()"  color="primary">

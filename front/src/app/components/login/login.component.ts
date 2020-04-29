@@ -16,7 +16,8 @@ export class LoginComponent implements OnInit {
   hide = true;
 
   constructor(private fb: FormBuilder,
-              public dialogRef: MatDialogRef<LoginComponent>, private matDialog: MatDialog,
+              public dialogRef: MatDialogRef<LoginComponent>,
+              private matDialog: MatDialog,
               private router: Router) {
   }
 

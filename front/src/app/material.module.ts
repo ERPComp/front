@@ -22,6 +22,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 @NgModule({
   imports: [
     CommonModule,
@@ -46,7 +48,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatToolbarModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCheckboxModule,
+    MatSlideToggleModule
   ],
   exports: [
     MatFormFieldModule,
@@ -70,7 +74,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatToolbarModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCheckboxModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

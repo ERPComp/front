@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {LoginComponent} from '../login/login.component';
 import {MatDialog} from '@angular/material/dialog';
+import {RegistrationComponent} from '../registration/registration.component';
 
 @Component({
   selector: 'app-welcome',
@@ -17,7 +18,8 @@ export class WelcomeComponent implements OnInit {
   }
   onRegisterClick() {
     // this.onCancelClick();
-    setTimeout(() => this.router.navigate(['register']));
+    // setTimeout(() => this.router.navigate(['register']));
+    this.matDialog.open(RegistrationComponent);
   }
   onLoginClick() {
     this.matDialog.open(LoginComponent);

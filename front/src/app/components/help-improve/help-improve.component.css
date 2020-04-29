@@ -1,0 +1,47 @@
+.helpImprove{
+  display: flex;
+  flex-direction: column;
+  width: 600px !important;
+}
+h1{
+  padding-left: 10%;
+}
+.prompt{
+  display: inline-flex;
+  background: deepskyblue;
+  width: 100%;
+}
+.icon{
+  font-size: 40px;
+  padding: 20px 20px 5px 20px;
+  color: white;
+}
+.text{
+  margin-left: 25px;
+  font-size: 16px;
+  text-align: left !important;
+  padding: 20px 20px 5px 0px;
+  color: white;
+}
+.inputs{
+  text-align: center;
+  margin: 12px 0px 12px 0px;
+}
+.top{
+  margin-top: 20px;
+}
+.bottom{
+  margin-bottom: 30px;
+}
+.field {
+  width: 80%;
+}
+.aaa {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.mat-raised-button{
+  background: deepskyblue;
+  color: white;
+}
