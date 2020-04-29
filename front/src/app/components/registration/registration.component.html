@@ -5,7 +5,7 @@
     <form class="field_form" [formGroup]="registrationForm" (submit)="onRegistrationClick()">
       <mat-form-field class="field top">
         <input matInput formControlName="fullName" placeholder="Full Name">
-        <mat-error *ngIf="isControlInvalid('FullName')">Full Name is <strong>required</strong></mat-error>
+        <mat-error *ngIf="isControlInvalid('fullName')">Full Name is <strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">
         <input matInput formControlName ="loginName" placeholder="Login">
@@ -23,7 +23,7 @@
         <input matInput formControlName="emailName" placeholder="Email">
         <mat-error *ngIf="isControlInvalid('emailName')">Email is <strong>invalid</strong></mat-error>
       </mat-form-field><br>
-      <mat-slide-toggle class="field top" color="primary" [(ngModel)]="enabled">
+      <mat-slide-toggle class="field top" color="primary" [checked]="enabled" (change)="enabled =!enabled">
         I give my consent to the processing of my personal data
       </mat-slide-toggle>
       <div class="footer" mat-dialog-actions>
