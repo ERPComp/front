@@ -11,22 +11,10 @@ export class RegistrationComponent implements OnInit {
 
   registrationForm: FormGroup;
   enabled = false;
+  hide = true;
 
   constructor(public dialog: MatDialog, private fb: FormBuilder,
               public dialogRef: MatDialogRef<RegistrationComponent>) { }
-
-  // fullName = new FormControl('', [Validators.required]);
-  //
-  // login = new FormControl('', [Validators.required]);
-  //
-  // password = new FormControl('', [Validators.required]);
-  //
-  // confirmPass = new FormControl('', [Validators.required]);
-  //
-  // email = new FormControl('', [
-  //   Validators.required,
-  //   Validators.email,
-  // ]);
 
   initForm(){
     this.registrationForm = this.fb.group({

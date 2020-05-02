@@ -16,6 +16,9 @@
 .field {
   width: 80%;
 }
+mat-icon{
+  font-size: 25px;
+}
 .footer {
   display: inline-flex;
   flex-direction: row;

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {RegistrationComponent} from '../registration/registration.component';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 
@@ -64,7 +65,7 @@ export class LoginComponent implements OnInit {
 
   onRegisterClick() {
     this.onCancelClick();
-    setTimeout(() => this.router.navigate(['register']));
+    setTimeout(() => this.matDialog.open(RegistrationComponent));
   }
 
 

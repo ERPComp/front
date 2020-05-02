@@ -19,11 +19,12 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 @NgModule({
   imports: [
     CommonModule,
@@ -50,7 +51,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatDialogModule,
     MatExpansionModule,
     MatCheckboxModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatAutocompleteModule
   ],
   exports: [
     MatFormFieldModule,
@@ -76,7 +78,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatDialogModule,
     MatExpansionModule,
     MatCheckboxModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatAutocompleteModule
   ]
 })
 export class MaterialModule { }

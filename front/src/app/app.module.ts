@@ -20,6 +20,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import {FormsModule} from '@angular/forms';
 import { ModalWindowComponent } from './components/modal-window/modal-window.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,13 +39,13 @@ import { ModalWindowComponent } from './components/modal-window/modal-window.com
     RegistrationComponent,
     ModalWindowComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MaterialModule,
-    BrowserAnimationsModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MaterialModule,
+        BrowserAnimationsModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

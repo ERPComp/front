@@ -1,0 +1,48 @@
+.create-ticket{
+
+}
+.title{
+  margin-top: 20px;
+  padding-left: 24%;
+}
+.createTicketForm{
+  text-align: center !important;
+  margin: 12px 0px 12px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  height: 100%;
+}
+.top{
+  margin-top: 20px;
+}
+.bottom{
+  margin-bottom: 30px;
+}
+.field {
+  width: 52%;
+  margin-top: 10px;
+}
+.control-buttons {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.mat-raised-button{
+  background: deepskyblue;
+  color: white;
+  margin-right: 12px;
+}
+.union-field-row{
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+}
+.left{
+  width: 30%;
+}
+.right{
+  margin-left: 10%;
+  width: 30%;
+
+}

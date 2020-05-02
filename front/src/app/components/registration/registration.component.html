@@ -12,11 +12,17 @@
         <mat-error *ngIf="isControlInvalid('loginName')">Login is <strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">
-        <input matInput formControlName="passwordName" placeholder="Password">
+        <input matInput formControlName="passwordName" placeholder="Password"[type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon style="font-size: 25px">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
         <mat-error *ngIf="isControlInvalid('passwordName')">Password is <strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">
-        <input matInput formControlName="confirmPasswordName" placeholder="Confirm Password">
+        <input matInput formControlName="confirmPasswordName" placeholder="Confirm Password"[type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon style="font-size: 25px">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
         <mat-error *ngIf="isControlInvalid('confirmPasswordName')">Confirm Password is<strong>required</strong></mat-error>
       </mat-form-field>
       <mat-form-field class="field">

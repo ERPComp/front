@@ -37,7 +37,7 @@ export class ToolbarComponent implements OnInit {
     this.ticketsCondition = !this.ticketsCondition;
   }
   onCreateTicketsClick(){
-
+    this.router.navigate (['create-ticket']);
   }
 
   onSearchClick(){

@@ -1,1 +1,110 @@
-<p>create-ticket works!</p>
+<div class="create-ticket">
+  <h1 class="title" mat-dialog-title>Create Ticket</h1>
+  <mat-divider></mat-divider>
+  <form [formGroup]="createTicketForm" class="createTicketForm">
+    <div class="field union-field-row">
+      <mat-form-field class="left top">
+        <mat-label>Project</mat-label>
+        <input matInput [formControlName]="'project'" placeholder="Project:">
+      </mat-form-field>
+<!--      <mat-form-field class="right">-->
+<!--        <input matInput [formControlName]="'ticketType'" placeholder="Ticket Type:">-->
+<!--      </mat-form-field>-->
+      <mat-form-field class="right">
+        <input matInput placeholder="Ticket Type:" aria-label="Ticket Type:"
+               [matAutocomplete]="auto" [formControlName]="'ticketType'">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+            <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
+            <span>{{state.name}}</span> |
+            <small>Population: {{state.population}}</small>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="field">
+        <input matInput [formControlName]="'summary'" placeholder="Summary:">
+      </mat-form-field>
+    </div>
+    <div class="field union-field-row">
+      <mat-form-field class="left">
+        <input matInput [formControlName]="'priority'" placeholder="Priority:" >
+      </mat-form-field>
+      <mat-form-field class="right">
+        <mat-label>Assignee</mat-label>
+        <input type="text" matInput [formControlName]="'assignee'" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of filteredAssignees | async" [value]="option">
+            {{option.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+<!--      <mat-form-field class="right">-->
+<!--        <input matInput [formControlName]="'assignee'" placeholder="Assignee:">-->
+<!--      </mat-form-field>-->
+    </div>
+    <div class="field union-field-row">
+      <mat-form-field class="left">
+        <input matInput [formControlName]="'component'" placeholder="Component/s:" >
+      </mat-form-field>
+      <mat-form-field class="right">
+        <input matInput [matDatepicker]="pickerDue" placeholder="Choose a due date:">
+        <mat-datepicker-toggle matSuffix [for]="pickerDue"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDue></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="field union-field-row">
+      <mat-form-field class="left">
+        <input matInput [formControlName]="'revision'" placeholder="Revision:" >
+      </mat-form-field>
+      <mat-form-field class="right">
+        <input matInput [formControlName]="'serverUrl'" placeholder="Server URL:">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Description:</mat-label>
+        <textarea matInput [formControlName]="'description'" ></textarea>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Test Case:</mat-label>
+        <textarea matInput [formControlName]="'testCase'"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="field union-field-row">
+      <mat-form-field class="left bottom">
+        <input matInput [formControlName]="'labels'" placeholder="Labels:" >
+      </mat-form-field>
+      <mat-form-field class="right">
+        <input matInput [formControlName]="'watchers'" placeholder="Watchers:">
+      </mat-form-field>
+    </div>
+
+<!--    <mat-form-field class="field">-->
+<!--      <input type="text"-->
+<!--             placeholder="Pick one"-->
+<!--             aria-label="Number"-->
+<!--             matInput-->
+<!--             [formControlName]="'test'"-->
+<!--             [matAutocomplete]="auto">-->
+<!--      <mat-autocomplete #auto="matAutocomplete">-->
+<!--        <mat-option *ngFor="let option of options" [value]="option">-->
+<!--          {{option}}-->
+<!--        </mat-option>-->
+<!--      </mat-autocomplete>-->
+<!--    </mat-form-field>-->
+
+<mat-divider></mat-divider>
+
+    <div class="control-buttons">
+      <button mat-raised-button class="control-button create" (click)="onCreateTicketClick()">Create</button>
+      <button mat-raised-button class="control-button cancel" (click)="onCancelTicketClick()">Cancel </button>
+    </div>
+  </form>
+</div>
+
+<!--      <mat-error *ngIf="isControlInvalid('fullName')">Project field is <strong>required</strong></mat-error>-->
