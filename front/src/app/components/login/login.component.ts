@@ -3,6 +3,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {RegistrationComponent} from '../registration/registration.component';
+import { LoginService } from 'src/app/shared/loginService';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 
@@ -19,7 +20,8 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder,
               public dialogRef: MatDialogRef<LoginComponent>,
               private matDialog: MatDialog,
-              private router: Router) {
+              private router: Router,
+              private loginService:LoginService) {
   }
 
   ngOnInit(): void {
@@ -61,6 +63,17 @@ export class LoginComponent implements OnInit {
       }
     }
     return errorMessage;
+  }
+  username:string
+  hashPassword:string
+
+  OnLogin(){
+    localStorage.removeItem('auth_token');
+    console.log(localStorage.getItem('auth_token'))
+    this.loginService.login(this.username,this.hashPassword).subscribe(response=>{
+      localStorage.setItem('auth_token', response.headers.get('Authorization'));
+        this.dialogRef.close();
+      })
   }
 
   onRegisterClick() {
