@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
 import {HelpImproveComponent} from '../help-improve/help-improve.component';
+import {MatMenuTrigger} from '@angular/material/menu';
 
 @Component({
   selector: 'app-toolbar',
@@ -15,10 +16,6 @@ export class ToolbarComponent implements OnInit {
               private matDialog: MatDialog) {
   }
 
-  dashboardsCondition = true;
-  projectsCondition = true;
-  ticketsCondition = true;
-
   ngOnInit(): void {
   }
 
@@ -27,21 +24,20 @@ export class ToolbarComponent implements OnInit {
   }
 
   onDashboardsClick(){
-    this.dashboardsCondition = !this.dashboardsCondition;
 
   }
   onProjectsClick(){
-    this.projectsCondition = !this.projectsCondition;
+
   }
   onTicketsClick(){
-    this.ticketsCondition = !this.ticketsCondition;
+    this.router.navigate (['ticket/1']);
   }
   onCreateTicketsClick(){
-    this.router.navigate (['create-ticket']);
+    this.router.navigate (['create-ticket/1']);
   }
 
   onSearchClick(){
-
+    this.router.navigate (['search']);
   }
   onHelpImproveClick(){
       this.matDialog.open(HelpImproveComponent);

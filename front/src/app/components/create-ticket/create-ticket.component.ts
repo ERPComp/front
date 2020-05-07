@@ -120,7 +120,7 @@ export class CreateTicketComponent implements OnInit {
   }
 
   onCreateTicketClick(){
-
+    this.router.navigate (['ticket/1']);
   }
 
   onCancelTicketClick(){

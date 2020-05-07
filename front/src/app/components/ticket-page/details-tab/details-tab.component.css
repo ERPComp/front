@@ -1,0 +1,38 @@
+tr{
+  display: table-row;
+}
+td{
+  height: 16px;
+  display: table-cell;
+}
+.details_name{
+  text-align: right !important;
+  min-width: 180px;
+  display: table-cell;
+}
+.details_value{
+  min-width: 180px;
+  display: table-cell;
+  padding-left: 30px !important;
+}
+.details_name_empty, .details_value_empty{
+  width: 100px !important;
+}
+.details_name_empty2, .details_value_empty2{
+  width: 10px !important;
+}
+.display{
+  display: inline-flex;
+  flex-direction: row;
+  width: 200%;
+}
+.test_case_field{
+  width: 100% !important;
+}
+.icon_button{
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.example-chip-list {
+  width: 100%;
+}

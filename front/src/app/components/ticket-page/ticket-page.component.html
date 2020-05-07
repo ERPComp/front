@@ -1,0 +1,47 @@
+
+<mat-drawer-container class="container">
+  <mat-drawer style="width: 75%" mode="side" opened>
+    <mat-card class="card">
+      <div class="content">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-subtitle class="subtitle">Project Name &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; Ticket ID</mat-card-subtitle>
+        <mat-card-title class="summary">Here the ticket name will be indicated</mat-card-title>
+      </mat-card-header>
+        <div>
+          <button class="button-panel" mat-raised-button><mat-icon>edit</mat-icon> Edit </button>
+          <button class="button-panel" mat-raised-button><mat-icon>comments</mat-icon> Comments </button>
+          <button class="button-panel" mat-raised-button> Assign </button>
+          <button class="button-panel" mat-raised-button> Change Status </button>
+          <button class="button-panel" mat-raised-button> Resolve </button>
+        </div>
+      <mat-card-content>
+        <mat-accordion>
+          <mat-expansion-panel class="expansion-panel" [expanded]="true" >
+            <mat-expansion-panel-header >
+              <mat-panel-title> Details </mat-panel-title>
+            </mat-expansion-panel-header>
+              <app-details-tab></app-details-tab>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+        <mat-card-content>
+        <mat-accordion>
+          <mat-expansion-panel class="expansion-panel" [expanded]="true" >
+            <mat-expansion-panel-header >
+              <mat-panel-title>Description</mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-description-tab></app-description-tab>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+      <mat-card-actions>
+
+      </mat-card-actions>
+      </div>
+    </mat-card>
+  </mat-drawer>
+  <mat-drawer-content>
+
+  </mat-drawer-content>
+</mat-drawer-container>

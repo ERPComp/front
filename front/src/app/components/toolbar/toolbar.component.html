@@ -1,34 +1,30 @@
-<mat-toolbar color="primary">
+<mat-toolbar >
   <div class="left">
     <button class="button_left" mat-icon-button (click)="onHomeClick()" aria-label="home">
       <mat-icon>home</mat-icon>
     </button>
-
     <button class="button_left" (click)="onDashboardsClick()" mat-button [matMenuTriggerFor]="menu"> Dashboards
-      <mat-icon *ngIf="dashboardsCondition">keyboard_arrow_down</mat-icon>
-      <mat-icon *ngIf="!dashboardsCondition" >keyboard_arrow_up</mat-icon>
+      <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>dialpad</mat-icon> <span>Redial</span> </button>
-      <button mat-menu-item> <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span> </button>
+      <button mat-menu-item> <mat-icon>widgets</mat-icon> <span>Dashboard1</span> </button>
+      <button mat-menu-item> <mat-icon>widgets</mat-icon> <span>Dashboard2</span> </button>
     </mat-menu>
 
-    <button class="button_left" (click)="onProjectsClick()" mat-button [matMenuTriggerFor]="menu"> Projects
-      <mat-icon *ngIf="projectsCondition">keyboard_arrow_down</mat-icon>
-      <mat-icon *ngIf="!projectsCondition" >keyboard_arrow_up</mat-icon>
+    <button class="button_left" (click)="onProjectsClick()" mat-button [matMenuTriggerFor]="menu1"> Projects
+      <mat-icon>keyboard_arrow_down</mat-icon>
+
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>dialpad</mat-icon> <span>Redial</span> </button>
-      <button mat-menu-item> <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span> </button>
+    <mat-menu #menu1="matMenu">
+      <button mat-menu-item> <mat-icon>folder</mat-icon> <span>Project1</span> </button>
     </mat-menu>
 
-    <button class="button_left" (click)="onTicketsClick()" mat-button [matMenuTriggerFor]="menu"> Tickets
-      <mat-icon *ngIf="ticketsCondition">keyboard_arrow_down</mat-icon>
-      <mat-icon *ngIf="!ticketsCondition" >keyboard_arrow_up</mat-icon>
+    <button class="button_left" mat-button [matMenuTriggerFor]="menu2"> Tickets
+      <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>dialpad</mat-icon> <span>Redial</span> </button>
-      <button mat-menu-item> <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span> </button>
+    <mat-menu #menu2="matMenu">
+      <button mat-menu-item (click)="onTicketsClick()"> <mat-icon>check_box</mat-icon> <span>ticket-1</span> </button>
+      <button mat-menu-item> <mat-icon>check_box</mat-icon> <span>ticket-2</span> </button>
     </mat-menu>
     <button class="button_left button_style " (click)="onCreateTicketsClick()" mat-button>
       Create

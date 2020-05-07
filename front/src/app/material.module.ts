@@ -25,6 +25,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatChipsModule} from '@angular/material/chips';
 @NgModule({
   imports: [
     CommonModule,
@@ -52,7 +55,11 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatExpansionModule,
     MatCheckboxModule,
     MatSlideToggleModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FormsModule,
+    MatButtonToggleModule,
+    MatSidenavModule,
+    MatChipsModule
   ],
   exports: [
     MatFormFieldModule,
@@ -79,7 +86,11 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatExpansionModule,
     MatCheckboxModule,
     MatSlideToggleModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FormsModule,
+    MatButtonToggleModule,
+    MatSidenavModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }

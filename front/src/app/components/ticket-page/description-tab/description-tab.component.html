@@ -1,0 +1,17 @@
+<div class="details_value">
+  <div class="display">
+    <mat-form-field appearance="outline" class="test_case_field">
+      <mat-label>Steps: </mat-label>
+      <ng-container *ngIf="pressed; else pressedTrue">
+        <textarea rows="8" matInput disabled></textarea>
+      </ng-container>
+      <ng-template #pressedTrue >
+        <textarea rows="8" matInput></textarea>
+      </ng-template>
+      <mat-hint>If you click on the icon you can change the value of this field.</mat-hint>
+    </mat-form-field>
+    <button mat-mini-fab class="icon_button" (click)="OnEditIconClick()">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+</div>

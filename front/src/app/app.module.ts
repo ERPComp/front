@@ -17,8 +17,11 @@ import { ProjectInfoTabComponent } from './components/profile/project-info-tab/p
 import { HelpImproveComponent } from './components/help-improve/help-improve.component';
 import { CreateTicketComponent } from './components/create-ticket/create-ticket.component';
 import { RegistrationComponent } from './components/registration/registration.component';
-import {FormsModule} from '@angular/forms';
 import { ModalWindowComponent } from './components/modal-window/modal-window.component';
+import { SearchComponent } from './components/search/search.component';
+import { TicketPageComponent } from './components/ticket-page/ticket-page.component';
+import { DetailsTabComponent } from './components/ticket-page/details-tab/details-tab.component';
+import { DescriptionTabComponent } from './components/ticket-page/description-tab/description-tab.component';
 
 
 @NgModule({
@@ -37,15 +40,18 @@ import { ModalWindowComponent } from './components/modal-window/modal-window.com
     HelpImproveComponent,
     CreateTicketComponent,
     RegistrationComponent,
-    ModalWindowComponent
+    ModalWindowComponent,
+    SearchComponent,
+    TicketPageComponent,
+    DetailsTabComponent,
+    DescriptionTabComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MaterialModule,
-        BrowserAnimationsModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

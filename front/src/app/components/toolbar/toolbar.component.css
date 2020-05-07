@@ -3,6 +3,8 @@ mat-toolbar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: #e91e63;
+  color: white;
 }
 .button_left{
   margin-right: 15px;
@@ -11,10 +13,11 @@ mat-toolbar{
   margin-right: 20px;
 }
 .button_style {
-  background: deepskyblue;
+  background: #f6a5c1;
   color: white;
 }
 
 .buttonIcon{
   color: white;
+  background: #e91e63;
 }
