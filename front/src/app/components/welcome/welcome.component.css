@@ -1,13 +1,27 @@
 .regBut {
   margin:100px;
+  margin-bottom: 500px;
+}
+div{
+  display: inline-block;
 }
 button{
   display: inline-block;
+  
 }
 section {
   display: table;
   margin: 8px;
 }
+.inputImage{
+  margin-left: 30%;
+  margin-top: 2%;
+  width: 70%;
+  height: 60%;
+  /* width: 1025px;
+  height: 665px; */
+}
+
 
 
 

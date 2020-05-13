@@ -3,6 +3,8 @@ import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
 import {HelpImproveComponent} from '../help-improve/help-improve.component';
 import {MatMenuTrigger} from '@angular/material/menu';
+import {RegistrationComponent} from '../registration/registration.component';
+import {LoginComponent} from '../login/login.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -34,6 +36,14 @@ export class ToolbarComponent implements OnInit {
   }
   onCreateTicketsClick(){
     this.router.navigate (['create-ticket/1']);
+  }
+  onRegisterClick() {
+    // this.onCancelClick();
+    // setTimeout(() => this.router.navigate(['register']));
+    this.matDialog.open(RegistrationComponent);
+  }
+  onLoginClick() {
+    this.matDialog.open(LoginComponent);
   }
 
   onSearchClick(){
