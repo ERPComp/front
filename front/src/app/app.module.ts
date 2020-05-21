@@ -22,6 +22,7 @@ import { SearchComponent } from './components/search/search.component';
 import { TicketPageComponent } from './components/ticket-page/ticket-page.component';
 import { DetailsTabComponent } from './components/ticket-page/details-tab/details-tab.component';
 import { DescriptionTabComponent } from './components/ticket-page/description-tab/description-tab.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { DescriptionTabComponent } from './components/ticket-page/description-ta
     SearchComponent,
     TicketPageComponent,
     DetailsTabComponent,
-    DescriptionTabComponent
+    DescriptionTabComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,

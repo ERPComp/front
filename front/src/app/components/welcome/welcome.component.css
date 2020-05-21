@@ -1,23 +1,20 @@
-.regBut {
-  margin:100px;
-  margin-bottom: 500px;
+.test1{
+  display: flex;
+  justify-content: flex-end;
 }
-div{
-  display: inline-block;
+.text{
+  font-size: 30px;
+  margin-top: 50%;
+  margin-left: 30%;
 }
-button{
-  display: inline-block;
+.input{
   
 }
-section {
-  display: table;
-  margin: 8px;
-}
 .inputImage{
-  margin-left: 30%;
+  margin-right: 2px;
   margin-top: 2%;
-  width: 70%;
-  height: 60%;
+  width: 75%;
+  height: 97%;
   /* width: 1025px;
   height: 665px; */
 }

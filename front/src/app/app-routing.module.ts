@@ -6,6 +6,7 @@ import {ChangeProfileComponent} from './components/change-profile/change-profile
 import {CreateTicketComponent} from './components/create-ticket/create-ticket.component';
 import {SearchComponent} from './components/search/search.component';
 import {TicketPageComponent} from './components/ticket-page/ticket-page.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 
 const routes: Routes = [
   {path: 'home', component: WelcomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'create-ticket/:ticketId', component: CreateTicketComponent},
   {path: 'search', component: SearchComponent},
   {path: 'ticket/:ticketId', component: TicketPageComponent},
+  {path: 'project/:projectId', component: ProjectPageComponent},
 ];
 
 @NgModule({

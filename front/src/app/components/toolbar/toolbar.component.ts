@@ -29,7 +29,7 @@ export class ToolbarComponent implements OnInit {
 
   }
   onProjectsClick(){
-
+    this.router.navigate (['project/1']);
   }
   onTicketsClick(){
     this.router.navigate (['ticket/1']);

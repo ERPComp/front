@@ -11,12 +11,12 @@
       <button mat-menu-item> <mat-icon>widgets</mat-icon> <span>Dashboard2</span> </button>
     </mat-menu>
 
-    <button class="button_left" (click)="onProjectsClick()" mat-button [matMenuTriggerFor]="menu1"> Projects
+    <button class="button_left" mat-button [matMenuTriggerFor]="menu1"> Projects
       <mat-icon>keyboard_arrow_down</mat-icon>
 
     </button>
     <mat-menu #menu1="matMenu">
-      <button mat-menu-item> <mat-icon>folder</mat-icon> <span>Project1</span> </button>
+      <button mat-menu-item (click)="onProjectsClick()"> <mat-icon>folder</mat-icon> <span>Project1</span> </button>
     </mat-menu>
 
     <button class="button_left" mat-button [matMenuTriggerFor]="menu2"> Tickets
