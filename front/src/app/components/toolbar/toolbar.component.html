@@ -3,22 +3,19 @@
     <button class="button_left" mat-icon-button (click)="onHomeClick()" aria-label="home">
       <mat-icon>home</mat-icon>
     </button>
-    <button class="button_left" (click)="onDashboardsClick()" mat-button [matMenuTriggerFor]="menu"> Dashboards
+    <button class="button_left" mat-button [matMenuTriggerFor]="menu"> Dashboards
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>widgets</mat-icon> <span>Dashboard1</span> </button>
+      <button mat-menu-item (click)="onDashboardsClick()"> <mat-icon>widgets</mat-icon> <span>Dashboard1</span> </button>
       <button mat-menu-item> <mat-icon>widgets</mat-icon> <span>Dashboard2</span> </button>
     </mat-menu>
-
     <button class="button_left" mat-button [matMenuTriggerFor]="menu1"> Projects
       <mat-icon>keyboard_arrow_down</mat-icon>
-
     </button>
     <mat-menu #menu1="matMenu">
       <button mat-menu-item (click)="onProjectsClick()"> <mat-icon>folder</mat-icon> <span>Project1</span> </button>
     </mat-menu>
-
     <button class="button_left" mat-button [matMenuTriggerFor]="menu2"> Tickets
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
@@ -31,8 +28,7 @@
     </button>
   </div>
   <div class="right">
-    <button class="button_right button_style" (click)="onRegisterClick()" mat-button>Registration</button>
-    <button class="button_right button_style" (click)="onLoginClick()" mat-button>Login</button>
+
     <button class="button_right button_style" (click)="onSearchClick()" mat-button>
       Search <mat-icon>search</mat-icon>
     </button>

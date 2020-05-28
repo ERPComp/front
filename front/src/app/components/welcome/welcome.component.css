@@ -1,24 +1,29 @@
 .test1{
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+td{
+  width: 45%;
+}
+.photo{
+  width: 1100px;
+  height: 630px;
+
 }
 .text{
   font-size: 30px;
-  margin-top: 50%;
-  margin-left: 30%;
-}
-.input{
-  
-}
-.inputImage{
-  margin-right: 2px;
-  margin-top: 2%;
-  width: 75%;
-  height: 97%;
-  /* width: 1025px;
-  height: 665px; */
+  margin-bottom: 1em;
 }
 
+.button_bottom{
+  margin-left: 20%;
+  margin-top: 30px;
+}
+.button_top{
+  margin-left: 10%;
+}
 
 
 

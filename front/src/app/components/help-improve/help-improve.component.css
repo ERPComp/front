@@ -8,7 +8,7 @@ h1{
 }
 .prompt{
   display: inline-flex;
-  background: deepskyblue;
+  background: #e91e63;
   width: 100%;
 }
 .icon{
@@ -42,6 +42,6 @@ h1{
   justify-content: flex-end;
 }
 .mat-raised-button{
-  background: deepskyblue;
+  background: #e91e63;
   color: white;
 }

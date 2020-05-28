@@ -23,7 +23,7 @@ import { TicketPageComponent } from './components/ticket-page/ticket-page.compon
 import { DetailsTabComponent } from './components/ticket-page/details-tab/details-tab.component';
 import { DescriptionTabComponent } from './components/ticket-page/description-tab/description-tab.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
-
+import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,8 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
     TicketPageComponent,
     DetailsTabComponent,
     DescriptionTabComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    DashboardPageComponent,
   ],
   imports: [
     BrowserModule,

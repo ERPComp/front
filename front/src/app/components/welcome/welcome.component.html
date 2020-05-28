@@ -1,16 +1,34 @@
 <div class="test1">
-    <h1 class="text">
-        Hello! We are welcome to see you in our 
-    </h1>
-    <img class="inputImage"  src="https://wac-cdn.atlassian.com/dam/jcr:b86a32cb-0aa8-4783-aa81-9592d4fbf829/jsw-header-illustrations---v3.png?cdnVersion=1010" alt="Image">    
+  <table>
+    <tr>
+      <td>
+
+        <p class="text">Hello! We are glad to see you in the DEPI</p>
+        <p class="text">project management system. We have </p>
+        <p class="text">provided you with a convenient and </p>
+        <p class="text">understandable tool that will help you </p>
+        <p class="text">develop your project in the shortest </p>
+        <p class="text"> possible time! Sign up or login and go!</p>
+        <button color="accent" class="button_bottom" (click)="onRegisterClick()" mat-raised-button>Registration</button>
+        <button color="accent" class="button_top" (click)="onLoginClick()" mat-raised-button>Login</button>
+      </td>
+      <td><img class="photo" src="https://i2.wampi.ru/2020/05/28/photo_2020-05-28_19-28-09.jpg" alt="photo 2020 05 28 19 28 09" border="0"></td>
+    </tr>
+  </table>
+
+
 </div>
+
+
+
+
+
+
+<!--    <img class="inputImage"  src="https://wac-cdn.atlassian.com/dam/jcr:b86a32cb-0aa8-4783-aa81-9592d4fbf829/jsw-header-illustrations-&#45;&#45;v3.png?cdnVersion=1010" alt="Image">-->
    <!-- <div>
        <button mat-raised-button class="regBut" color="primary"(click)="onRegisterClick()">Registration</button>
     <button mat-raised-button color="primary" (click)="onLoginClick()">Login</button>
 </div> -->
-   
-
-
 <!--<button mat-button *ngIf="!(currentUser | async);else loginUser" (click)="onLoginClick()">Login</button>-->
 
 

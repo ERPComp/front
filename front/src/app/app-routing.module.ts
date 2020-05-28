@@ -7,6 +7,7 @@ import {CreateTicketComponent} from './components/create-ticket/create-ticket.co
 import {SearchComponent} from './components/search/search.component';
 import {TicketPageComponent} from './components/ticket-page/ticket-page.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
+import {DashboardPageComponent} from './components/dashboard-page/dashboard-page.component';
 
 const routes: Routes = [
   {path: 'home', component: WelcomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'search', component: SearchComponent},
   {path: 'ticket/:ticketId', component: TicketPageComponent},
   {path: 'project/:projectId', component: ProjectPageComponent},
+  {path: 'dash/:dashId', component: DashboardPageComponent},
 ];
 
 @NgModule({

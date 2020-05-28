@@ -26,7 +26,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   onDashboardsClick(){
-
+    this.router.navigate (['dash/1']);
   }
   onProjectsClick(){
     this.router.navigate (['project/1']);
@@ -36,14 +36,6 @@ export class ToolbarComponent implements OnInit {
   }
   onCreateTicketsClick(){
     this.router.navigate (['create-ticket/1']);
-  }
-  onRegisterClick() {
-    // this.onCancelClick();
-    // setTimeout(() => this.router.navigate(['register']));
-    this.matDialog.open(RegistrationComponent);
-  }
-  onLoginClick() {
-    this.matDialog.open(LoginComponent);
   }
 
   onSearchClick(){
