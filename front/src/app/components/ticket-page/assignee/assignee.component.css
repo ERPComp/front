@@ -1,0 +1,21 @@
+tr{
+  display: table-row;
+}
+td{
+  height: 16px;
+  display: table-cell;
+}
+.details_name{
+  text-align: right !important;
+  min-width: 150px;
+  display: table-cell;
+}
+.details_value{
+  min-width: 150px;
+  display: table-cell;
+  padding-left: 30px !important;
+}
+.badgeButton{
+  background: #f6a5c1;
+}
+

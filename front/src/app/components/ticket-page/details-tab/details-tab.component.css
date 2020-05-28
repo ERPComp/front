@@ -32,7 +32,11 @@ td{
 .icon_button{
   margin-left: 20px;
   margin-top: 25px;
+  background: #f6a5c1;
 }
 .example-chip-list {
   width: 100%;
+}
+.edit{
+  color: black;
 }

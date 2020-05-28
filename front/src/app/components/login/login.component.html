@@ -12,7 +12,7 @@
     </mat-form-field>
   </form>
   <div class="edit-user-controls">
-    <button mat-button color="primary"  [disabled]="credentialForm.invalid" [mat-dialog-close]="credentialForm.getRawValue()" cdkFocusInitial>
+    <button mat-button color="primary" (click)="onLoginClick()" [disabled]="credentialForm.invalid" [mat-dialog-close]="credentialForm.getRawValue()" cdkFocusInitial>
       Login
     </button>
     <button mat-button color="warn" (click)=onCancelClick()>Cancel</button>

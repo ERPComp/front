@@ -24,6 +24,9 @@ import { DetailsTabComponent } from './components/ticket-page/details-tab/detail
 import { DescriptionTabComponent } from './components/ticket-page/description-tab/description-tab.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
+import { AssigneeComponent } from './components/ticket-page/assignee/assignee.component';
+import {MatBadgeModule} from "@angular/material/badge";
+import { DatesComponent } from './components/ticket-page/dates/dates.component';
 
 @NgModule({
   declarations: [
@@ -48,12 +51,15 @@ import { DashboardPageComponent } from './components/dashboard-page/dashboard-pa
     DescriptionTabComponent,
     ProjectPageComponent,
     DashboardPageComponent,
+    AssigneeComponent,
+    DatesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

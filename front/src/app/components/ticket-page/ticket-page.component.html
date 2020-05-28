@@ -25,7 +25,7 @@
           </mat-expansion-panel>
         </mat-accordion>
       </mat-card-content>
-        <mat-card-content>
+      <mat-card-content>
         <mat-accordion>
           <mat-expansion-panel class="expansion-panel" [expanded]="true" >
             <mat-expansion-panel-header >
@@ -42,6 +42,22 @@
     </mat-card>
   </mat-drawer>
   <mat-drawer-content>
+    <mat-accordion>
+      <mat-expansion-panel class="expansion-panel people" [expanded]="true" >
+        <mat-expansion-panel-header >
+          <mat-panel-title>People</mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-assignee></app-assignee>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel class="expansion-panel dates" [expanded]="true" >
+        <mat-expansion-panel-header >
+          <mat-panel-title>Dates</mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-dates></app-dates>
+      </mat-expansion-panel>
+    </mat-accordion>
 
   </mat-drawer-content>
 </mat-drawer-container>
